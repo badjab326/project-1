@@ -23,3 +23,20 @@ form {
     background-color: blueviolet;
     color: aquamarine;
 }
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#resultInfo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+img {
+    max-height: 400px;
+    max-width: 400px;
+}
