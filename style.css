@@ -1,0 +1,25 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    color: aquamarine;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+#resultBtn {
+    background-color: blueviolet;
+    color: aquamarine;
+}
