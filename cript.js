@@ -1,12 +1,12 @@
-//Variables
-const URL = "https://rawg.io/api/games?key=65a0d6caa83f42fdaace4080c7d3d576&search=$"
-
 //Element References
 const form$ = $('form');
 const input$ = $(`input[type="text"]`);
 const title$ = $('#gameTitle')
 const info$ = $('#gameData');
 const result$ = $('#resultInfo')
+
+//Variables
+
 
 //Event listeners
 form$.on('submit', loadData)
@@ -16,9 +16,10 @@ form$.on('submit', loadData)
 function loadData(evt){
 
     evt.preventDefault()
-    const userInput = input$.val()
+    userInput = input$.val()
+    const URL = `https://api.rawg.io/api/games?page_size=50&genres=${userInput}&key=65a0d6caa83f42fdaace4080c7d3d576`
 
-    $.ajax(URL + userInput).then(function(data) {
+    $.ajax(URL).then(function(data) {
         console.log(data)
         title$.text(data.results[0].name)
         result$.prepend(`<img src="${data.results[0].background_image}"/>`)
