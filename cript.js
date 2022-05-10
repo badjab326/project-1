@@ -17,7 +17,7 @@ function loadData(evt){
 
     evt.preventDefault()
     userInput = input$.val()
-    
+    //if statement for genre names
     const URL = `https://api.rawg.io/api/games?page_size=50&genres=${userInput}&key=65a0d6caa83f42fdaace4080c7d3d576`
     
 
