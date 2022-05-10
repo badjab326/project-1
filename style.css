@@ -11,7 +11,23 @@ body {
 header {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
     font-size: 40px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#flavorText {
+    font-size: 15px;
+    padding: 0;
+}
+
+main {
+    margin-top: 80px;
 }
 
 form {
