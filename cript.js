@@ -1,9 +1,9 @@
 //Element References
 const form$ = $('form');
 const input$ = $(`input[type="text"]`);
-const title$ = $('#gameTitle')
+const title$ = $('#gameTitle');
 const info$ = $('#gameData');
-const result$ = $('#gameImage')
+const result$ = $('#gameImage');
 
 //Variables
 
@@ -17,6 +17,7 @@ function loadData(evt){
 
     evt.preventDefault()
     userInput = input$.val()
+    
     const URL = `https://api.rawg.io/api/games?page_size=50&genres=${userInput}&key=65a0d6caa83f42fdaace4080c7d3d576`
     
 
@@ -36,4 +37,4 @@ function loadData(evt){
         info$.text(`Platforms: ${plats}`)
         
     })
-    }
+    };
