@@ -16,21 +16,22 @@ form$.on('submit', loadData)
 function loadData(evt){
 
     evt.preventDefault()
-    userInput = input$.val()
+    let userInput = input$.val()
     //if statement for genre names
+    if (userInput === 'rpg') {
+        userInput = 'role-playing-games-rpg'
+    }
     const URL = `https://api.rawg.io/api/games?page_size=50&genres=${userInput}&key=65a0d6caa83f42fdaace4080c7d3d576`
     
 
 
     $.ajax(URL).then(function(data) {
         // console.log(data)
-        // title$.text('')
-        // result$.text('')
         const x = Math.floor((Math.random() * data.results.length) + 0)
         title$.text(data.results[x].name)
         result$.html(`<img src="${data.results[x].background_image}"/>`)
         const plats = data.results[x].platforms.map(plat => {
-            console.log(plat.platform.name)
+            // console.log(plat.platform.name)
             return `${plat.platform.name} `
         })
         console.log(info$)
