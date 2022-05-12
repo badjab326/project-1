@@ -11,6 +11,6 @@ Screenshots:
 Getting started: https://627d5499cb52e41015b7b0e9--symphonious-swan-799a30.netlify.app/
 Check out the app and try a few genres, i.e. shooter, fighting, rpg, indie, etc.!
 
-Future enhancements: 1. Add multiple input fields to narrow down a more specific type of game.
-                     2. Use dropdown menus to eliminate user input errors.
+Future enhancements: 1. Add multiple input fields to narrow down a more specific type of game. <br>
+                     2. Use dropdown menus to eliminate user input errors.<br>
                      3. Allow users to sync gaming accounts and filter by games they already own.
