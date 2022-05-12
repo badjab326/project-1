@@ -18,8 +18,10 @@ function loadData(evt){
     evt.preventDefault()
     let userInput = input$.val()
     //if statement for genre names
-    if (userInput === 'rpg') {
+    if (userInput.toLowerCase() === 'rpg' || userInput.toLowerCase() === 'role playing game') {
         userInput = 'role-playing-games-rpg'
+    } else if (userInput.toLowerCase() === 'mmo') {
+        userInput = 'massively-multiplayer'
     }
     const URL = `https://api.rawg.io/api/games?page_size=50&genres=${userInput}&key=65a0d6caa83f42fdaace4080c7d3d576`
     
@@ -32,10 +34,10 @@ function loadData(evt){
         result$.html(`<img src="${data.results[x].background_image}"/>`)
         const plats = data.results[x].platforms.map(plat => {
             // console.log(plat.platform.name)
-            return `${plat.platform.name} `
+            return `${plat.platform.name}`
         })
         console.log(info$)
-        info$.text(`Platforms: ${plats}`)
+        info$.text(`Platforms: ${plats.join(', ')}`)
         
     })
     };
