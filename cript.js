@@ -39,5 +39,7 @@ function loadData(evt){
         console.log(info$)
         info$.text(`Platforms: ${plats.join(', ')}`)
         
+    }).catch(function(data) {
+        alert('Try a different genre!')
     })
     };
