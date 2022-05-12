@@ -22,6 +22,8 @@ function loadData(evt){
         userInput = 'role-playing-games-rpg'
     } else if (userInput.toLowerCase() === 'mmo') {
         userInput = 'massively-multiplayer'
+    } else if (userInput.toLowerCase() === 'shooting') {
+        userInput = 'shooter'
     }
     const URL = `https://api.rawg.io/api/games?page_size=50&genres=${userInput}&key=65a0d6caa83f42fdaace4080c7d3d576`
     
