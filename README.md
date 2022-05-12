@@ -8,7 +8,7 @@ Screenshots:
 <img src="./What2Play2.png">
 
 
-Getting started: https://627d5499cb52e41015b7b0e9--symphonious-swan-799a30.netlify.app/
+Getting started: https://symphonious-swan-799a30.netlify.app/
 Check out the app and try a few genres, i.e. shooter, fighting, rpg, indie, etc.!
 
 Future enhancements: <br>
