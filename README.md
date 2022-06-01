@@ -2,7 +2,7 @@ What2Play
 ---------
 
 What is it?: What2Play is a web based app that gives users a randomized game suggestion based on the genre they're in the mood for!<br>
-Technologies used: This app is built using HTML, CSS, JavaScript and jQuery.<br>
+Technologies used: This app is built using HTML, CSS, JavaScript, AJAX and jQuery.<br>
 Screenshots: 
 <img src="./What2Play.png">
 <img src="./What2Play2.png">
