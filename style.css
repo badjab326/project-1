@@ -16,6 +16,7 @@ body {
     background-image: url(./background.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -23,12 +24,13 @@ header {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    font-size: 40px;
+    font-size: 7vh;
 }
 
 h1 {
     margin: 0;
     padding: 0;
+    padding-top: 30px;
     font-family: 'good_timesregular';
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ad00e6, 0 0 50px #9200e6;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -78,11 +80,44 @@ h2 {
 }
 
 img {
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 40vh;
+    max-width: 40vw;
 }
 
 p {
     display: flex;
     justify-content: center;
+}
+
+input[type="text"] {
+    width: 12vw;
+    box-sizing: border-box;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: 0;
+    border: 2px solid hotpink;
+  }
+
+input[type="submit"] {
+    font-weight: bolder;
+    border: 0px;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    appearance: none;
+    height: 4vh;
+    justify-content: center;
+    line-height: 1;
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#resultBtn:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 2px 2px;
+    transition: 0.5s ease-in-out;
 }

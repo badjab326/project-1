@@ -33,7 +33,7 @@ function loadData(evt){
         // console.log(data)
         const x = Math.floor((Math.random() * data.results.length) + 0)
         title$.text(data.results[x].name)
-        result$.html(`<img src="${data.results[x].background_image}"/>`)
+        result$.html(`<a href="${data.results[x].background_image}"><img src="${data.results[x].background_image}"/></a>`)
         const plats = data.results[x].platforms.map(plat => {
             // console.log(plat.platform.name)
             return `${plat.platform.name}`
