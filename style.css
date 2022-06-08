@@ -82,6 +82,12 @@ h2 {
 img {
     max-height: 40vh;
     max-width: 40vw;
+    border: 2px solid aquamarine;
+}
+
+img:hover {
+    border: 2px solid hotpink;
+    transition: 0.5s ease-in-out;
 }
 
 p {
