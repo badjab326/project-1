@@ -13,6 +13,7 @@
 body {
     height: 100vh;
     color: aquamarine;
+    background-color: black;
     background-image: url(./background.png);
     background-position: center;
     background-size: cover;
