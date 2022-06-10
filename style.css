@@ -105,6 +105,7 @@ input[type="text"] {
 
 input:focus {
     outline: 0;
+    box-sizing: border-box;
     border: 2px solid hotpink;
   }
 
