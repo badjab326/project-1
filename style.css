@@ -96,7 +96,7 @@ p {
 }
 
 input[type="text"] {
-    width: 12vw;
+    width: 150px;
     box-sizing: border-box;
     border: 2px solid aquamarine;
     border-radius: 5px;
