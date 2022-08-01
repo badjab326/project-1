@@ -42,6 +42,6 @@ function loadData(evt){
         info$.text(`Platforms: ${plats.join(', ')}`)
         
     }).catch(function(data) {
-        alert('Try a different genre!')
+        alert('Try a different genre!\n(i.e. Shooter, RPG, Puzzle, Platformer, Fighting)')
     })
     };

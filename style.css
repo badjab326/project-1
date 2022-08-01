@@ -55,7 +55,7 @@ h1 {
 }
 
 main {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 form {
@@ -99,6 +99,7 @@ p {
     flex-direction: column;
     text-align: center;
     font-size: 2vh;
+    padding-bottom: 20px;
 }
 
 input[type="text"] {
